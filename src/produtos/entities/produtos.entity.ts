@@ -41,6 +41,6 @@ export class Produto {
     foto:string
     
     @ManyToOne(() => Categoria, (Categoria ) => Categoria.produto, {
-        onDelete: "CASCADE"})//Declara que se uma categoria é excluida todas as tarefas pertencentes tambem são
+        onDelete: "CASCADE"})
 categoria: Categoria
 }
