@@ -20,8 +20,8 @@ export class CategoriaController{
 
     @Get('/descricao/:descricao')//tarefa/nome/l
     @HttpCode(HttpStatus.OK)//Retorna um status se der certo o Get ele retorna Ok
-    findByDescricao(@Param('descricao')descricao: string): Promise<Categoria[]>{
-        return this.service.findByDescricao(descricao)
+    findByNome(@Param('descricao')nome: string): Promise<Categoria[]>{
+        return this.service.findByDescricao(nome)
     } 
 
     @Post()//Post Salva no DB
